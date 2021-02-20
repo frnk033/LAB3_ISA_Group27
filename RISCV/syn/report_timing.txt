@@ -1,0 +1,88 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : riscv
+Version: O-2018.06-SP4
+Date   : Sat Feb 20 23:34:37 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: IRAM_out[2]
+              (input port clocked by MY_CLK)
+  Endpoint: control_unit/sel_OP1_forwarded1_reg[2]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  IRAM_out[2] (in)                                        0.00       0.50 f
+  data_path/IRAM_ins[2] (DATAPATH_datamem_size96_IR_SIZE32_data_size32_ALU_OPC_SIZE4)
+                                                          0.00       0.50 f
+  data_path/DECODE/InstrRAM_in[2] (decode_stage_IR_SIZE32_data_SIZE32_add_size5)
+                                                          0.00       0.50 f
+  data_path/DECODE/Stall_check/IR_IF_ID[2] (stall_detection_unit_IR_SIZE32)
+                                                          0.00       0.50 f
+  data_path/DECODE/Stall_check/U29/ZN (NOR2_X1)           0.04       0.54 r
+  data_path/DECODE/Stall_check/U76/ZN (NAND3_X1)          0.05       0.59 f
+  data_path/DECODE/Stall_check/U52/ZN (NOR2_X1)           0.04       0.63 r
+  data_path/DECODE/Stall_check/U25/ZN (NAND4_X1)          0.10       0.74 f
+  data_path/DECODE/Stall_check/U2/ZN (INV_X1)             0.13       0.86 r
+  data_path/DECODE/Stall_check/U49/ZN (AOI22_X1)          0.06       0.92 f
+  data_path/DECODE/Stall_check/U14/ZN (XNOR2_X1)          0.06       0.98 f
+  data_path/DECODE/Stall_check/U12/ZN (AND4_X1)           0.05       1.03 f
+  data_path/DECODE/Stall_check/U11/ZN (OAI22_X1)          0.06       1.09 r
+  data_path/DECODE/Stall_check/U10/ZN (NAND2_X1)          0.03       1.12 f
+  data_path/DECODE/Stall_check/stall (stall_detection_unit_IR_SIZE32)
+                                                          0.00       1.12 f
+  data_path/DECODE/stall (decode_stage_IR_SIZE32_data_SIZE32_add_size5)
+                                                          0.00       1.12 f
+  data_path/stall (DATAPATH_datamem_size96_IR_SIZE32_data_size32_ALU_OPC_SIZE4)
+                                                          0.00       1.12 f
+  control_unit/stall (CU_MICROCODE_MEM_SIZE9_FUNC_SIZE3_OP_CODE_SIZE7_ALU_OPC_SIZE4_IR_SIZE32_CW_SIZE34)
+                                                          0.00       1.12 f
+  control_unit/U33/ZN (NOR2_X1)                           0.05       1.17 r
+  control_unit/U32/ZN (INV_X1)                            0.04       1.21 f
+  control_unit/forw_comp/stall_cond (forwarding_proc_MICROCODE_MEM_SIZE9_FUNC_SIZE3_OP_CODE_SIZE7_ALU_OPC_SIZE4_IR_SIZE32_CW_SIZE34)
+                                                          0.00       1.21 f
+  control_unit/forw_comp/U57/ZN (OR4_X1)                  0.14       1.35 f
+  control_unit/forw_comp/U17/ZN (NOR2_X1)                 0.07       1.43 r
+  control_unit/forw_comp/U71/ZN (NAND2_X1)                0.05       1.47 f
+  control_unit/forw_comp/U47/ZN (INV_X1)                  0.04       1.51 r
+  control_unit/forw_comp/U7/ZN (NAND2_X1)                 0.03       1.54 f
+  control_unit/forw_comp/U64/ZN (OAI21_X1)                0.05       1.59 r
+  control_unit/forw_comp/sel_OP1_forwarded_i[2] (forwarding_proc_MICROCODE_MEM_SIZE9_FUNC_SIZE3_OP_CODE_SIZE7_ALU_OPC_SIZE4_IR_SIZE32_CW_SIZE34)
+                                                          0.00       1.59 r
+  control_unit/sel_OP1_forwarded1_reg[2]/D (DFFR_X1)      0.01       1.59 r
+  data arrival time                                                  1.59
+
+  clock MY_CLK (rise edge)                                5.20       5.20
+  clock network delay (ideal)                             0.00       5.20
+  clock uncertainty                                      -0.07       5.13
+  control_unit/sel_OP1_forwarded1_reg[2]/CK (DFFR_X1)     0.00       5.13 r
+  library setup time                                     -0.04       5.09
+  data required time                                                 5.09
+  --------------------------------------------------------------------------
+  data required time                                                 5.09
+  data arrival time                                                 -1.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.50
+
+
+1
