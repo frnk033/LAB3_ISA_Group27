@@ -1,0 +1,185 @@
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/gtech.db'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'riscv'.
+Information: Building the design 'CU' instantiated from design 'riscv' with
+	the parameters "MICROCODE_MEM_SIZE=9,FUNC_SIZE=3,OP_CODE_SIZE=7,ALU_OPC_SIZE=5,IR_SIZE=32,CW_SIZE=34". (HDL-193)
+Warning:  ../src/a.b-CU.vhd:80: The initial value for signal 'cw_mem' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  ../src/a.b-CU.vhd:131: The initial value for signal 'cw_stall' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Statistics for case statements in always block at line 304 in file
+	'../src/a.b-CU.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           309            |    auto/auto     |
+|           312            |    auto/auto     |
+|           322            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CU_MICROCODE_MEM_SIZE9_FUNC_SIZE3_OP_CODE_SIZE7_ALU_OPC_SIZE5_IR_SIZE32_CW_SIZE34 line 234 in file
+		'../src/a.b-CU.vhd'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+|    sel_muxmem3_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        cw2_reg         | Flip-flop |  28   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        cw3_reg         | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        cw4_reg         | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     aluOpcode1_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     aluOpcode2_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     sel_regA1_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     sel_regB1_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| sel_OP1_forwarded1_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+| sel_OP1_forwarded2_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+| sel_OP2_forwarded1_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+| sel_OP2_forwarded2_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    sel_muxB1_1_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    sel_muxB1_2_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    sel_muxmem1_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    sel_muxmem2_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+==================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'datapath' instantiated from design 'riscv' with
+	the parameters "datamem_size=96,IR_SIZE=32,data_size=32,ALU_OPC_SIZE=5". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'opcode_decoder'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'forwarding_proc' instantiated from design 'CU_MICROCODE_MEM_SIZE9_FUNC_SIZE3_OP_CODE_SIZE7_ALU_OPC_SIZE5_IR_SIZE32_CW_SIZE34' with
+	the parameters "MICROCODE_MEM_SIZE=9,FUNC_SIZE=3,OP_CODE_SIZE=7,ALU_OPC_SIZE=5,IR_SIZE=32,CW_SIZE=34". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'fetch_stage' instantiated from design 'DATAPATH_datamem_size96_IR_SIZE32_data_size32_ALU_OPC_SIZE5' with
+	the parameters "IRAM_SIZE=96,IR_SIZE=32,data_SIZE=32,IRAM_LENGTH=8". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'decode_stage' instantiated from design 'DATAPATH_datamem_size96_IR_SIZE32_data_size32_ALU_OPC_SIZE5' with
+	the parameters "IR_SIZE=32,data_SIZE=32,add_size=5". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'execute_stage' instantiated from design 'DATAPATH_datamem_size96_IR_SIZE32_data_size32_ALU_OPC_SIZE5' with
+	the parameters "data_size=32,ALU_OPC_SIZE=5". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'memory_stage' instantiated from design 'DATAPATH_datamem_size96_IR_SIZE32_data_size32_ALU_OPC_SIZE5' with
+	the parameters "IR_SIZE=32,data_size=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'writeback_stage' instantiated from design 'DATAPATH_datamem_size96_IR_SIZE32_data_size32_ALU_OPC_SIZE5' with
+	the parameters "data_size=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg' instantiated from design 'fetch_stage_IRAM_SIZE96_IR_SIZE32_data_SIZE32_IRAM_LENGTH8' with
+	the parameters "data_size=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine reg_data_size32 line 22 in file
+		'../src/a.a.o-register.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      Dout_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'adder' instantiated from design 'fetch_stage_IRAM_SIZE96_IR_SIZE32_data_SIZE32_IRAM_LENGTH8' with
+	the parameters "SIZE=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux2to1' instantiated from design 'fetch_stage_IRAM_SIZE96_IR_SIZE32_data_SIZE32_IRAM_LENGTH8' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'registerfile' instantiated from design 'decode_stage_IR_SIZE32_data_SIZE32_add_size5' with
+	the parameters "A=5,D=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine registerfile_A5_D32 line 34 in file
+		'../src/a.a.n-register_file.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    REGISTERS_reg    | Flip-flop | 1024  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+============================================================
+|    block name/line     | Inputs | Outputs | # sel inputs |
+============================================================
+| registerfile_A5_D32/31 |   32   |   32    |      5       |
+| registerfile_A5_D32/32 |   32   |   32    |      5       |
+============================================================
+Presto compilation completed successfully.
+Information: Building the design 'immediate_block' instantiated from design 'decode_stage_IR_SIZE32_data_SIZE32_add_size5' with
+	the parameters "ir_size=32,data_size=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'stall_detection_unit' instantiated from design 'decode_stage_IR_SIZE32_data_SIZE32_add_size5' with
+	the parameters "IR_SIZE=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'forwarding_detection_unit' instantiated from design 'decode_stage_IR_SIZE32_data_SIZE32_add_size5' with
+	the parameters "IR_SIZE=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'comparator_block' instantiated from design 'decode_stage_IR_SIZE32_data_SIZE32_add_size5' with
+	the parameters "SIZE=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'reg' instantiated from design 'decode_stage_IR_SIZE32_data_SIZE32_add_size5' with
+	the parameters "data_size=5". (HDL-193)
+
+Inferred memory devices in process
+	in routine reg_data_size5 line 22 in file
+		'../src/a.a.o-register.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      Dout_reg       | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mux5to1' instantiated from design 'execute_stage_data_size32_ALU_OPC_SIZE5' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ALU' instantiated from design 'execute_stage_data_size32_ALU_OPC_SIZE5' with
+	the parameters "N=32,OP=5". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux3to1' instantiated from design 'memory_stage_IR_SIZE32_data_size32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux6to1' instantiated from design 'immediate_block_ir_size32_data_size32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'add_sub_block' instantiated from design 'alu_N32_OP5' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'comparator' instantiated from design 'alu_N32_OP5' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'alu_logic' instantiated from design 'alu_N32_OP5' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'SHIFTER' instantiated from design 'alu_N32_OP5' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'abs_block' instantiated from design 'alu_N32_OP5' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'alu_adder' instantiated from design 'add_sub_block_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'carry_gen' instantiated from design 'alu_adder_N32' with
+	the parameters "N=5". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'sum_gen' instantiated from design 'alu_adder_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'pg_network'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'gg'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'pg'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'carry_sel' instantiated from design 'sum_gen_N32' with
+	the parameters "N=4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RCA' instantiated from design 'carry_sel_N4' with
+	the parameters "N=4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux2to1' instantiated from design 'carry_sel_N4' with
+	the parameters "N=4". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FA'. (HDL-193)
+Presto compilation completed successfully.
+1

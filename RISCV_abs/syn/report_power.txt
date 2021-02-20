@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : riscv
+Version: O-2018.06-SP4
+Date   : Sun Feb 21 00:32:13 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+riscv                  5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   2.1937 mW   (97%)
+  Net Switching Power  =  79.4926 uW    (3%)
+                         ---------
+Total Dynamic Power    =   2.2732 mW  (100%)
+
+Cell Leakage Power     = 329.8898 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       2.1730e+03            0.3020        1.2531e+05        2.2986e+03  (  88.30%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     20.7209           79.1904        2.0458e+05          304.4910  (  11.70%)
+--------------------------------------------------------------------------------------------------
+Total          2.1937e+03 uW        79.4925 uW     3.2989e+05 nW     2.6031e+03 uW
+1

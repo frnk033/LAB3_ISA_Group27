@@ -1,0 +1,80 @@
+Warning: Worst timing paths might not be returned. (TIM-104)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -slack_greater_than 0.03
+        -max_paths 1
+Design : RISCV
+Version: O-2018.06-SP4
+Date   : Sat Feb 20 03:45:20 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: IRAM_out[2]
+              (input port clocked by MY_CLK)
+  Endpoint: control_unit/aluOpcode1_reg[3]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  IRAM_out[2] (in)                                        0.00       0.50 f
+  data_path/IRAM_ins[2] (DATAPATH_datamem_size96_IR_SIZE32_data_size32_ALU_OPC_SIZE5)
+                                                          0.00       0.50 f
+  data_path/DECODE/InstrRAM_in[2] (decode_stage_IR_SIZE32_data_SIZE32_add_size5)
+                                                          0.00       0.50 f
+  data_path/DECODE/Stall_check/IR_IF_ID[2] (stall_detection_unit_IR_SIZE32)
+                                                          0.00       0.50 f
+  data_path/DECODE/Stall_check/U82/ZN (NOR2_X1)           0.04       0.54 r
+  data_path/DECODE/Stall_check/U83/ZN (NAND2_X1)          0.03       0.57 f
+  data_path/DECODE/Stall_check/U69/ZN (NOR2_X1)           0.05       0.62 r
+  data_path/DECODE/Stall_check/U41/ZN (INV_X1)            0.04       0.66 f
+  data_path/DECODE/Stall_check/U103/ZN (OAI22_X1)         0.06       0.72 r
+  data_path/DECODE/Stall_check/U45/ZN (XNOR2_X1)          0.04       0.76 f
+  data_path/DECODE/Stall_check/U43/ZN (NAND2_X1)          0.04       0.80 r
+  data_path/DECODE/Stall_check/U73/ZN (NOR4_X1)           0.03       0.82 f
+  data_path/DECODE/Stall_check/U86/ZN (OAI22_X1)          0.06       0.88 r
+  data_path/DECODE/Stall_check/U85/ZN (NAND2_X1)          0.03       0.91 f
+  data_path/DECODE/Stall_check/stall (stall_detection_unit_IR_SIZE32)
+                                                          0.00       0.91 f
+  data_path/DECODE/stall (decode_stage_IR_SIZE32_data_SIZE32_add_size5)
+                                                          0.00       0.91 f
+  data_path/stall (DATAPATH_datamem_size96_IR_SIZE32_data_size32_ALU_OPC_SIZE5)
+                                                          0.00       0.91 f
+  control_unit/stall (CU_MICROCODE_MEM_SIZE9_FUNC_SIZE3_OP_CODE_SIZE7_ALU_OPC_SIZE5_IR_SIZE32_CW_SIZE34)
+                                                          0.00       0.91 f
+  control_unit/U35/ZN (OR2_X2)                            0.06       0.97 f
+  control_unit/U34/ZN (INV_X1)                            0.04       1.00 r
+  control_unit/U33/ZN (NAND3_X1)                          0.04       1.05 f
+  control_unit/U43/ZN (NOR4_X1)                           0.09       1.14 r
+  control_unit/aluOpcode1_reg[3]/D (DFFR_X1)              0.01       1.15 r
+  data arrival time                                                  1.15
+
+  clock MY_CLK (rise edge)                                1.30       1.30
+  clock network delay (ideal)                             0.00       1.30
+  clock uncertainty                                      -0.07       1.23
+  control_unit/aluOpcode1_reg[3]/CK (DFFR_X1)             0.00       1.23 r
+  library setup time                                     -0.04       1.19
+  data required time                                                 1.19
+  --------------------------------------------------------------------------
+  data required time                                                 1.19
+  data arrival time                                                 -1.15
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+1

@@ -1,0 +1,598 @@
+# //  ModelSim SE 6.2g Feb 21 2007 Linux 3.10.0-957.5.1.el7.x86_64
+# //
+# //  Copyright 1991-2007 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+z.script_simulation.tcl
+# invalid command name "z.script_simulation.tcl"
+source z.script_simulation.tcl
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling package constants
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package constants
+# -- Compiling package mytypes
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Loading package mytypes
+# -- Compiling entity riscv
+# -- Compiling architecture str of riscv
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Loading package mytypes
+# -- Compiling entity datapath
+# -- Compiling architecture str of datapath
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity fetch_stage
+# -- Compiling architecture beh of fetch_stage
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity decode_stage
+# -- Compiling architecture str of decode_stage
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity execute_stage
+# -- Compiling architecture str of execute_stage
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity memory_stage
+# -- Compiling architecture str of memory_stage
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity writeback_stage
+# -- Compiling architecture str of writeback_stage
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Loading package mytypes
+# -- Compiling entity alu
+# -- Compiling architecture str of alu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Compiling entity add_sub_block
+# -- Compiling architecture str of add_sub_block
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Compiling entity p4_adder
+# -- Compiling architecture str of p4_adder
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Compiling entity sum_gen
+# -- Compiling architecture str of sum_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Compiling entity carry_sel
+# -- Compiling architecture str of carry_sel
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Compiling entity rca
+# -- Compiling architecture structural of rca
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity fa
+# -- Compiling architecture behavioral of fa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Compiling entity gg
+# -- Compiling architecture str of gg
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity carry_gen
+# -- Compiling architecture str_gen of carry_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Compiling entity pg_network
+# -- Compiling architecture str_pg of pg_network
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Compiling entity pg
+# -- Compiling architecture pg_str of pg
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity comparator
+# -- Compiling architecture str of comparator
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Compiling entity alu_logic
+# -- Compiling architecture behavioral of alu_logic
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Compiling entity shifter
+# -- Compiling architecture behavioral of shifter
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Compiling entity abs_block
+# -- Compiling architecture str of abs_block
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Loading package mytypes
+# -- Compiling entity forwarding_detection_unit
+# -- Compiling architecture beh of forwarding_detection_unit
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Loading package mytypes
+# -- Compiling entity forwarding_proc
+# -- Compiling architecture str of forwarding_proc
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity immediate_block
+# -- Compiling architecture str of immediate_block
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity adder
+# -- Compiling architecture beh of adder
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity comparator_block
+# -- Compiling architecture beh of comparator_block
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Loading package mytypes
+# -- Compiling entity opcode_decoder
+# -- Compiling architecture str of opcode_decoder
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Loading package mytypes
+# -- Compiling entity stall_detection_unit
+# -- Compiling architecture beh of stall_detection_unit
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity registerfile
+# -- Compiling architecture a of registerfile
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package constants
+# -- Compiling entity reg
+# -- Compiling architecture beh of reg
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity mux2to1
+# -- Compiling architecture behavioral of mux2to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity mux3to1
+# -- Compiling architecture str of mux3to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity mux4to1
+# -- Compiling architecture str of mux4to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity mux5to1
+# -- Compiling architecture behavioral of mux5to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity mux6to1
+# -- Compiling architecture behavioral of mux6to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity iram
+# -- Compiling architecture iram_bhe of iram
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity dataram
+# -- Compiling architecture str of dataram
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package constants
+# -- Loading package mytypes
+# -- Compiling entity cu
+# -- Compiling architecture str of cu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package constants
+# -- Compiling entity tb_riscv
+# -- Compiling architecture test of tb_riscv
+# -- Compiling configuration cfg_tb
+# -- Loading entity tb_riscv
+# -- Loading architecture test of tb_riscv
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package mytypes
+# -- Loading entity riscv
+# -- Loading entity iram
+# -- Loading entity dataram
+# vsim -t 10ps -novopt work.tb_riscv(test) 
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Refreshing ./work.constants
+# Loading work.constants
+# Refreshing ./work.tb_riscv(test)
+# Loading work.tb_riscv(test)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Refreshing ./work.mytypes
+# Loading work.mytypes
+# Refreshing ./work.riscv(str)
+# Loading work.riscv(str)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Refreshing ./work.cu(str)
+# Loading work.cu(str)
+# Refreshing ./work.opcode_decoder(str)
+# Loading work.opcode_decoder(str)
+# Refreshing ./work.forwarding_proc(str)
+# Loading work.forwarding_proc(str)
+# Refreshing ./work.datapath(str)
+# Loading work.datapath(str)
+# Refreshing ./work.fetch_stage(beh)
+# Loading work.fetch_stage(beh)
+# Refreshing ./work.reg(beh)
+# Loading work.reg(beh)
+# Refreshing ./work.adder(beh)
+# Loading work.adder(beh)
+# Refreshing ./work.mux2to1(behavioral)
+# Loading work.mux2to1(behavioral)
+# Refreshing ./work.decode_stage(str)
+# Loading work.decode_stage(str)
+# Refreshing ./work.registerfile(a)
+# Loading work.registerfile(a)
+# Refreshing ./work.immediate_block(str)
+# Loading work.immediate_block(str)
+# Refreshing ./work.mux6to1(behavioral)
+# Loading work.mux6to1(behavioral)
+# Refreshing ./work.stall_detection_unit(beh)
+# Loading work.stall_detection_unit(beh)
+# Refreshing ./work.forwarding_detection_unit(beh)
+# Loading work.forwarding_detection_unit(beh)
+# Refreshing ./work.comparator_block(beh)
+# Loading work.comparator_block(beh)
+# Refreshing ./work.execute_stage(str)
+# Loading work.execute_stage(str)
+# Refreshing ./work.mux5to1(behavioral)
+# Loading work.mux5to1(behavioral)
+# Refreshing ./work.alu(str)
+# Loading work.alu(str)
+# Refreshing ./work.add_sub_block(str)
+# Loading work.add_sub_block(str)
+# Refreshing ./work.p4_adder(str)
+# Loading work.p4_adder(str)
+# Refreshing ./work.carry_gen(str_gen)
+# Loading work.carry_gen(str_gen)
+# Refreshing ./work.pg_network(str_pg)
+# Loading work.pg_network(str_pg)
+# Refreshing ./work.gg(str)
+# Loading work.gg(str)
+# Refreshing ./work.pg(pg_str)
+# Loading work.pg(pg_str)
+# Refreshing ./work.sum_gen(str)
+# Loading work.sum_gen(str)
+# Refreshing ./work.carry_sel(str)
+# Loading work.carry_sel(str)
+# Refreshing ./work.rca(structural)
+# Loading work.rca(structural)
+# Refreshing ./work.fa(behavioral)
+# Loading work.fa(behavioral)
+# Refreshing ./work.comparator(str)
+# Loading work.comparator(str)
+# Refreshing ./work.alu_logic(behavioral)
+# Loading work.alu_logic(behavioral)
+# Refreshing ./work.shifter(behavioral)
+# Loading work.shifter(behavioral)
+# Refreshing ./work.abs_block(str)
+# Loading work.abs_block(str)
+# Refreshing ./work.memory_stage(str)
+# Loading work.memory_stage(str)
+# Refreshing ./work.mux3to1(str)
+# Loading work.mux3to1(str)
+# Refreshing ./work.writeback_stage(str)
+# Loading work.writeback_stage(str)
+# Refreshing ./work.iram(iram_bhe)
+# Loading work.iram(iram_bhe)
+# Refreshing ./work.dataram(str)
+# Loading work.dataram(str)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/ir
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/ir
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/ir
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/ir
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/data_path/execute/alu_unit/shift_block
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/data_path/execute/alu_unit/shift_block
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/data_path/decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/data_path/decode/register_file
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/forw_comp
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/opcode_decodign
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/opcode_decodign
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/opcode_decodign
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/opcode_decodign
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/opcode_decodign
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/opcode_decodign
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/opcode_decodign
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/opcode_decodign
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_riscv/u1/control_unit/opcode_decodign
+# ** Error: (vsim-3858) STD_LOGIC_TEXTIO procedure HREAD : Parameter L designates an empty string.
+#    Time: 0 ps  Iteration: 1  Instance: /tb_riscv/dr
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_riscv/ir
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_riscv/ir
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_riscv/ir
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_riscv/ir
+# ** Warning: NUMERIC_STD.TO_INTEGER is returning a negative result.
+#    Time: 22 ns  Iteration: 5  Instance: /tb_riscv/dr
+# ** Warning: NUMERIC_STD.TO_INTEGER is returning a negative result.
+#    Time: 34 ns  Iteration: 5  Instance: /tb_riscv/dr
+# ** Warning: NUMERIC_STD.TO_INTEGER is returning a negative result.
+#    Time: 44 ns  Iteration: 5  Instance: /tb_riscv/dr
+# ** Warning: NUMERIC_STD.TO_INTEGER is returning a negative result.
+#    Time: 54 ns  Iteration: 5  Instance: /tb_riscv/dr
+# ** Warning: NUMERIC_STD.TO_INTEGER is returning a negative result.
+#    Time: 66 ns  Iteration: 5  Instance: /tb_riscv/dr
+# ** Warning: NUMERIC_STD.TO_INTEGER is returning a negative result.
+#    Time: 76 ns  Iteration: 5  Instance: /tb_riscv/dr
+# ** Warning: NUMERIC_STD.TO_INTEGER is returning a negative result.
+#    Time: 86 ns  Iteration: 5  Instance: /tb_riscv/dr

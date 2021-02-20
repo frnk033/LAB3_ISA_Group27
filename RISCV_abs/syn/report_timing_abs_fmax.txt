@@ -1,0 +1,82 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : riscv
+Version: O-2018.06-SP4
+Date   : Sun Feb 21 00:12:49 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: IRAM_out[2]
+              (input port clocked by MY_CLK)
+  Endpoint: control_unit/sel_OP1_forwarded1_reg[0]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  IRAM_out[2] (in)                                        0.00       0.50 f
+  data_path/IRAM_ins[2] (DATAPATH_datamem_size96_IR_SIZE32_data_size32_ALU_OPC_SIZE5)
+                                                          0.00       0.50 f
+  data_path/DECODE/InstrRAM_in[2] (decode_stage_IR_SIZE32_data_SIZE32_add_size5)
+                                                          0.00       0.50 f
+  data_path/DECODE/Forwarding/IR_IF_ID[2] (forwarding_detection_unit_IR_SIZE32)
+                                                          0.00       0.50 f
+  data_path/DECODE/Forwarding/U131/ZN (NOR2_X1)           0.04       0.54 r
+  data_path/DECODE/Forwarding/U103/ZN (NAND3_X1)          0.05       0.59 f
+  data_path/DECODE/Forwarding/U66/ZN (NOR4_X1)            0.16       0.75 r
+  data_path/DECODE/Forwarding/U137/ZN (AOI222_X1)         0.06       0.81 f
+  data_path/DECODE/Forwarding/U26/ZN (OAI221_X1)          0.07       0.88 r
+  data_path/DECODE/Forwarding/forwarding_ik[2] (forwarding_detection_unit_IR_SIZE32)
+                                                          0.00       0.88 r
+  data_path/DECODE/forwarding_ik_out[2] (decode_stage_IR_SIZE32_data_SIZE32_add_size5)
+                                                          0.00       0.88 r
+  data_path/forwarding_ik_out[2] (DATAPATH_datamem_size96_IR_SIZE32_data_size32_ALU_OPC_SIZE5)
+                                                          0.00       0.88 r
+  control_unit/forwarding_ik[2] (CU_MICROCODE_MEM_SIZE9_FUNC_SIZE3_OP_CODE_SIZE7_ALU_OPC_SIZE5_IR_SIZE32_CW_SIZE34)
+                                                          0.00       0.88 r
+  control_unit/forw_comp/forwarding_ik[2] (forwarding_proc_MICROCODE_MEM_SIZE9_FUNC_SIZE3_OP_CODE_SIZE7_ALU_OPC_SIZE5_IR_SIZE32_CW_SIZE34)
+                                                          0.00       0.88 r
+  control_unit/forw_comp/U87/ZN (NOR2_X1)                 0.04       0.92 f
+  control_unit/forw_comp/U89/ZN (NAND3_X1)                0.04       0.96 r
+  control_unit/forw_comp/U130/ZN (INV_X1)                 0.03       0.99 f
+  control_unit/forw_comp/U125/ZN (AOI22_X1)               0.06       1.05 r
+  control_unit/forw_comp/U104/ZN (INV_X1)                 0.02       1.07 f
+  control_unit/forw_comp/U117/ZN (AOI211_X1)              0.08       1.15 r
+  control_unit/forw_comp/U137/ZN (AOI21_X1)               0.03       1.18 f
+  control_unit/forw_comp/sel_OP1_forwarded_i[0] (forwarding_proc_MICROCODE_MEM_SIZE9_FUNC_SIZE3_OP_CODE_SIZE7_ALU_OPC_SIZE5_IR_SIZE32_CW_SIZE34)
+                                                          0.00       1.18 f
+  control_unit/sel_OP1_forwarded1_reg[0]/D (DFFR_X1)      0.01       1.19 f
+  data arrival time                                                  1.19
+
+  clock MY_CLK (rise edge)                                1.30       1.30
+  clock network delay (ideal)                             0.00       1.30
+  clock uncertainty                                      -0.07       1.23
+  control_unit/sel_OP1_forwarded1_reg[0]/CK (DFFR_X1)     0.00       1.23 r
+  library setup time                                     -0.04       1.19
+  data required time                                                 1.19
+  --------------------------------------------------------------------------
+  data required time                                                 1.19
+  data arrival time                                                 -1.19
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
